@@ -3,18 +3,18 @@ This is an eCommerce Spring Boot Website.
 
 # User side features
 
-Landing Page
-Search functionality
-Search by category
-Sort, Filter by rating, price
-See individual product page
-Add to cart
-See cart details and total price in it
-Make a purchase, and track status
-See historical order
-Payment ,Checkout pages
-Login, Register Pages
-Examples of shopify sites
+- Landing Page
+- Search functionality
+- Search by category
+- Sort, Filter by rating, price
+- See individual product page
+- Add to cart
+- See cart details and total price in it
+- Make a purchase, and track status
+- See historical order
+- Payment ,Checkout pages
+- Login, Register Pages
+- Examples of shopify sites
 
 # Admin Side Features
 
