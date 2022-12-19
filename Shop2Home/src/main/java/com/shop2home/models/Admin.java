@@ -8,10 +8,12 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import lombok.Data;
+import lombok.NoArgsConstructor;
 import lombok.ToString;
 
 @Entity
 @Data
+@NoArgsConstructor
 @ToString
 public class Admin {
 
@@ -21,11 +23,7 @@ public class Admin {
 	private Integer adminId;
 
 	@NotEmpty(message = "password must not Empty or null!!")
-	@Size(min = 3, max = 10, message = "admin passsword should contain min 3 and max 10 chars!!")
+	@Size(min = 3, max = 15, message = "admin passsword should contain min 3 and max 15 chars!!")
 	private String adminPass;
-
-	public Admin() {
-
-	}
 
 }

@@ -40,7 +40,7 @@ public class AdminController {
 	private AdminSessionDao asDao;
 
 	@PostMapping("/createadmin")
-	public ResponseEntity<Admin> saveAdmin(@Valid @RequestBody Admin admin) throws AdminException {
+	public ResponseEntity<Admin> createAdmin(@Valid @RequestBody Admin admin) throws AdminException {
 
 		Admin savedAdmin = aService.createAdmin(admin);
 

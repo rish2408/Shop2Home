@@ -10,10 +10,17 @@ import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
 
-import lombok.Data;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
-@Data
 @Entity
+@Getter @Setter
+@ToString
+@NoArgsConstructor
+@AllArgsConstructor
 public class Customer {
 
 	@Id

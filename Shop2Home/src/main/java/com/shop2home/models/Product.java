@@ -7,14 +7,16 @@ import javax.persistence.Id;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Pattern;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
+import lombok.ToString;
 
 @Entity
-@Data
+@Getter @Setter
+@ToString
 @NoArgsConstructor
 @AllArgsConstructor
 public class Product {
@@ -24,7 +26,7 @@ public class Product {
 	private Integer productId;
 
 	@NotBlank(message = "Product Name is Mandatory...")
-	@Pattern(regexp = "^[A-Za-z0-9]+$")
+//	@Pattern(regexp = "^[A-Za-z0-9]+$")
 	private String productName;
 
 	private String description;

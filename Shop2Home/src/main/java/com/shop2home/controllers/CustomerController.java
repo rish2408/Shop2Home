@@ -22,7 +22,7 @@ public class CustomerController {
 	private CustomerService cService;
 
 	@PostMapping("/customers")
-	public ResponseEntity<Customer> saveCustomer(@Valid @RequestBody Customer customer) throws CustomerException {
+	public ResponseEntity<Customer> registerCustomer(@Valid @RequestBody Customer customer) throws CustomerException {
 
 		Customer savedCustomer = cService.createCustomer(customer);
 

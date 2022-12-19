@@ -14,7 +14,6 @@ import com.shop2home.models.Customer;
 import com.shop2home.repositories.AdminDao;
 import com.shop2home.repositories.AdminSessionDao;
 import com.shop2home.repositories.CustomerDao;
-import com.shop2home.repositories.CustomerSessionDao;
 
 @Service
 public class AdminServiceImpl implements AdminService {
@@ -27,9 +26,6 @@ public class AdminServiceImpl implements AdminService {
 
 	@Autowired
 	private CustomerDao cDao;
-
-	@Autowired
-	private CustomerSessionDao sDao;
 
 	@Override
 	public Customer updateCustomer(Customer customer, String key) throws CustomerException {
@@ -50,7 +46,7 @@ public class AdminServiceImpl implements AdminService {
 		Admin existingAdmin = aDao.findByAdminId(admin.getAdminId());
 
 		if (existingAdmin != null)
-			throw new AdminException("Admin Already Registered with this Admin Id ");
+			throw new AdminException("Admin Already Registered with this Admin Id");
 
 		return aDao.save(admin);
 
