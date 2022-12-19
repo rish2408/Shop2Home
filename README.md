@@ -25,21 +25,20 @@
 
 # User should  be able to perform below operations:  
 
-- Landing Page
+- Login, Register
+- See cart details and total price in it
+- Add to cart
+- Make a purchase, and track status
 - Search functionality
 - Search by category
 - See individual product page
-- Add to cart
-- See cart details and total price in it
-- Make a purchase, and track status
-- Payment ,Checkout pages
-- Login, Register Pages 
+- Payment
 
 ## Admin Module
 
 # Admin should be able to perform below operations:
 
-- Product List
+- Add Product List
 - Add new products
 - Manage Quantities
 - Order management
