@@ -10,7 +10,7 @@
 
 ## Live on Railway Cloud
 
-- [@WATCH LIVE](https://shop2home-production.up.railway.app/swagger-ui/)
+- [GO TO API](https://shop2home-production.up.railway.app/swagger-ui/)
 
 ## Tech Stack
 
